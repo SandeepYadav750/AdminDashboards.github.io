@@ -1,0 +1,377 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* sandeep start */
+.navlogo {
+  display: flex;
+  align-items: center;
+}
+.avatardropdown{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+span.avatarimg img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.dropdown-toggle.santoggle::after {
+  display:none !important;
+}
+.navmailnoticon {
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  margin-left: 20px;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #605e5e;
+}
+.navmailnoticon svg {
+  font-size: 22px;
+}
+button.navsearchbtn {
+  border: none;
+  background: #fff;
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  font-size: 22px;
+}
+.dropdown-menu.sansetdrop {
+  position: absolute;
+  top: 57px;
+  right: 0;
+  background: #032d7c;
+  color: #d1d1d1;
+}
+.ullist{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.ullist li .seticon{
+  margin-right: 10px;
+  color: #d1d1d1;
+}
+.sansetdrop .dropdown-item{
+  background: none;
+  color: #d5d5d5;
+}
+.sansetdrop .dropdown-item:focus,.sansetdrop .dropdown-item:hover,.sansetdrop .dropdown-item:hover svg {
+  background: none;
+  color: #fff;
+}
+.aboutcompanyhead{
+  display: flex;
+  align-items: center;
+}
+.aboutcompanyhead svg {
+  padding: 6px;
+  font-size: 30px;
+  background: black;
+  border-radius: 50%;
+  margin: 0 !important;
+}
+.ticksvg svg {
+  background: #032d7c;
+  border-radius: 50%;
+  margin: 0 !important;
+  color: #03d4a2 !important;
+}
+.comName{
+  margin: 0 10px;
+}
+.comName p {
+  color: #fff;
+  margin-bottom: -6px;
+  font-size: 17px;
+}
+.commember{
+  font-size: 11px;
+  color: #98a1b3;
+}
+.aboutcompanybottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.aboutcompanybottom span {
+  font-size: 12px;
+  font-weight: 600;
+}
+.aboutmail{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+.sandropdown ul li:last-child .aboutmail{
+  border-bottom: 1px solid #fff;
+}
+.maildropimg {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.maildropimg img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.mailName{
+  display: flex;
+  flex-direction: column;
+}
+span.mailtitle {
+  font-weight: 700;
+  color: #52617f;
+  font-size: 13px;
+}
+span.mailcol {
+  color: #5b7390;
+  font-size: 12px;
+}
+a.mailmember {
+  text-decoration: none;
+}
+span.mailtime {
+  color: #52617f;
+  font-weight: 700;
+}
+.mailallmess{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mailallmess span {
+  font-size: 14px;
+  font-weight: 700;
+}
+@media (min-width:992px) {
+  .navgeader{
+  border: 1px solid #ddd;
+  padding: 0 20px;
+}
+.navlogo{
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 0 0;
+}
+.navbaricon {
+  padding: 0 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.navavtar{  
+  border-left: 1px solid #ddd;
+}
+.navavtar li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatartext h5 {
+  font-size: 13px;
+  margin: 0;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.avatartext p {
+  margin: 0;
+  font-size: 11px;
+  text-transform: capitalize;
+}
+
+.sandropdown .dropdown-item{
+  font-weight: 600;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu.sandropdown {
+  position: absolute;
+  top: 70px;
+  left: 11px;
+}
+.dropdown-menu.sandropdown:after {
+  position: absolute;
+  bottom: 100%;
+  left: 7%;
+  display: block;
+  width: 0;
+  height: 0;
+  content: "";
+  border: 0 solid transparent;
+  border-width: 5px 10px;
+  border-width: .6rem;
+  border-bottom-color: #666;
+  border-top-width: 0;
+  z-index: 5;
+}
+.settingicons{
+  margin-left: 10px;
+}
+.sansetdrop {
+  position: absolute;
+  top: 57px;
+  right: 0;
+}
+.dropdown-menu.sansetdrop:after {
+  position: absolute;
+  bottom: 100%;
+  right: 7%;
+  display: block;
+  width: 0;
+  height: 0;
+  content: "";
+  border: 0 solid transparent;
+  border-width: 5px 10px;
+  border-width: .6rem;
+  border-bottom-color: #4127a9;
+  border-top-width: 0;
+  z-index: 5;
+}
+}
+
+@media (max-width:767px) {
+  .avatardropdown{
+    justify-content: left;
+  } 
+  .navmailnoticon {
+    margin: 10px 0;
+  }
+}
+
+/* Sidebar start */
+.main-container{
+  display: flex;
+}
+main{
+  padding: 20px;
+}
+.title{
+  font-size: 50px;
+  color: #022c7b;
+}
+
+
+.sidebar{
+  height: calc(100vh - 86px);
+  color: #fff;
+  background: #022c7b;
+  padding: 20px 10px;
+  position: relative;
+}
+.dashline{
+  position: absolute;
+  top: 34px;
+  left: 0;
+  width: 100%;
+  border-top: 1px dashed #4566a7;
+  display: block;
+  z-index: 0;
+}
+.mainmenu{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+.mainmenu h6{
+  padding: 5px 14px;
+  color: #4566a7;
+  background: #022c7b;
+  border: 1px dashed #4566a7;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px;
+  font-size: 14px;
+  margin: 0;
+  z-index: 1;
+}
+.mainmenuicon{
+  padding: 2px 5px;
+  background: #022c7b;
+  border: 2px solid #0182d4;
+  border-radius: 5px;
+  font-size: 14px;
+  z-index: 1;
+  cursor: pointer;
+}
+.routes a{
+  text-decoration: none;
+}
+.sidebarbox {
+  display: flex;
+  align-items: center;
+  padding: 7px 0;
+  margin-top: 6px;
+  border-radius: 5px;
+  width: 100%;
+  transition: padding 0.5s;
+  font-size: 13px;
+}
+.sidebarbox:hover{  
+  background: #3b5ccf;
+  padding: 7px;
+}
+.active .sidebarbox{  
+  background: #3b5ccf;
+  padding: 7px;
+}
+.sidebaricon{
+  color: #738dc0;
+  margin-right: 10px;
+}
+.sidebartext{
+  color: #c2d2f1;
+  text-decoration: none;
+}
+.sidebarbox:hover .sidebartext, .sidebarbox:hover .sidebaricon, .active .sidebartext, .active .sidebaricon{  
+  color: #fff;
+}
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sidedownarrow{
+  font-size: 20px;
+
+}
+.icon_name{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sidearrowdis{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* sidebar end */
+
+
+/* sandeep end */
